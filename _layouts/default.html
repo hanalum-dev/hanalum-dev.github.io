@@ -49,11 +49,11 @@
 <div id="blackover-nav" class="blackover"></div>
 <nav id="menu">
     <ul>
-        <h3>Navigation</h3>
-        <li><a href="{{ site.baseurl }}/">Home</a></li>
-        <li><a href="{{ site.baseurl }}/about">About</a></li>
-        <li><a href="{{ site.baseurl }}/authors">Contributors <span class="badge badge-primary">new</span></a></li>
-        <li><a target="_blank" href="https://bootstrapstarter.com/jekyll-theme-memoirs/">Get Memoirs</a></li>      
+        <h3>한아름</h3>
+        <li><a href="{{ site.baseurl }}/">홈</a></li>
+        <li><a href="{{ site.baseurl }}/about">한아름 / 한마음 소개</a></li>
+        <li><a target="_blank" rel="noopener" href="">한아름 </a></li>
+        <li><a target="_blank" rel="noopener" href="">한아름 Instagram</a></li>
         <li><a href="{{ site.baseurl }}/contact">Contact</a></li>       
     </ul>   
 </nav>
@@ -90,7 +90,7 @@
         {{ content }}
     </div>
 
-    {% if site.mailchimp-list %}
+    {% comment %} {% if site.mailchimp-list %}
     <!-- Newsletter
     ================================================== -->
     <div class="newsletter text-center">
@@ -102,7 +102,7 @@
             </div>
         </form>
     </div>
-    {% endif %}
+    {% endif %} {% endcomment %}
     
 </div>
 
@@ -112,10 +112,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-12 text-center text-lg-left">
-                Copyright © {{ site.time | date: "%Y" }} {{ site.name }} 
             </div>
             <div class="col-md-6 col-sm-12 text-center text-lg-right">    
-                <a target="_blank" href="https://www.wowthemes.net/memoirs-free-jekyll-theme/">Memoirs Jekyll Theme</a> by WowThemes.net
+                Copyright © {{ site.time | date: "%Y" }} {{ site.name }} 
             </div>
         </div>
     </div>
