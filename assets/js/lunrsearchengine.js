@@ -22,6 +22,7 @@ var documents = [{% for page in site.pages %}{% if page.url contains '.xml' or p
     }{% if forloop.last %}{% else %}, {% endif %}{% endfor %}];
 
 var idx = lunr(function () {
+    this.use(lunr.ko);
     this.ref('id')
     this.field('title')
     this.field('body')
