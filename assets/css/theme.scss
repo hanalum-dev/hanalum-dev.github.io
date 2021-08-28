@@ -449,8 +449,12 @@ img, img:hover {
         margin-bottom:30px;
     }
     code {
-        font-size: 15px;
-        color: #94918d;
+        font-size: 16px;
+        font-weight: bold;
+        color: $light-blue;
+        background-color: #e9e9e9;
+        padding: 1px;
+        margin: 0 1px 0 1px;
     }
     code[class*="language-"], pre[class*="language-"] {
         font-size:15px;
