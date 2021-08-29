@@ -1,5 +1,3 @@
-# Memoirs Jekyll Theme
-
 ## Dev
 
 > gem install bundler
