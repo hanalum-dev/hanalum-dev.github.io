@@ -5,8 +5,8 @@ permalink: /contact
 comments: false
 ---
 
-<form action="https://formspree.io/{{site.email}}" method="POST">    
-<p class="mb-4">Please send your message to {{site.name}}. We will reply as soon as possible!</p>
+<form action="https://formspree.io/f/mgerrebz" method="POST">    
+<p class="mb-4">한아름에게 궁금한 것이 있으신가요?</p>
 <div class="form-group row">
 <div class="col-md-6">
 <input class="form-control" type="text" name="name" placeholder="Name*" required>
