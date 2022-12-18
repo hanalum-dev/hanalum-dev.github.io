@@ -12,3 +12,14 @@
 ## Docs
 
 [template docs](https://bootstrapstarter.com/jekyll-theme-memoirs/)
+
+## 2022.12.18
+ruby버전과 특정 gem(nokogiri) 버전 호환성 문제 발생 시 해결방법
+
+> bundle update nokogiri
+
+> bundle install
+
+> jekyll serve
+만약 오류나면
+> bundle exec jekyll serve
