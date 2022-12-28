@@ -23,3 +23,5 @@ ruby버전과 특정 gem(nokogiri) 버전 호환성 문제 발생 시 해결방�
 > jekyll serve
 만약 오류나면
 > bundle exec jekyll serve
+
+test
