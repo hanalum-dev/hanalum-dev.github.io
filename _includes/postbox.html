@@ -28,6 +28,13 @@
             <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords:30 }}</h4>
         </div>
         <div class="card-footer bg-white">
+            <div class="wrapfooter" style="margin-bottom: 5px;">
+                {% unless page.categories == empty %}
+                {% for category in post.categories %}
+                <a class="smoothscroll badge badge-primary text-capitalize" style="color: #fff; font-size: 15px;" href="{{site.baseurl}}/categories#{{ category | replace: ' ','-' }}">{{ category }}</a>
+                {% endfor %}
+                {% endunless %}
+            </div>
             <div class="wrapfooter">
                 {% if post.author %}
                 <span class="meta-footer-thumb">
