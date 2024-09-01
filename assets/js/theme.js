@@ -7,7 +7,7 @@ jQuery(document).ready(function($){
           /* we need to scroll to the top of the window first, because the browser will always jump to the anchor first before JavaScript is ready, thanks Stack Overflow: http://stackoverflow.com/a/3659116 */
           window.scrollTo(0, 0);
           target = location.hash.split('#');
-          smoothScrollTo($('#'+target[1]));
+          smoothScrollTo($('#'+decodeURIComponent(target[1])));
         }
       }, 1);
 
